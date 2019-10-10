@@ -10,6 +10,7 @@ export default function Home(props){
   const [city, setCity] = useState('');
   const [weather, setWeather] = useState({});
   const [weatherType, setWeatherType] = useState('');
+  const [cloudy, setCloudy] = useState(0);
 
   function apiCallback(response){
     console.log('response', response)
@@ -26,13 +27,13 @@ export default function Home(props){
 
   useEffect(()=>{
     let getWeatherType = weather.weather ? weather.weather[0].main : '';
-    // let getCloudy = weather.clouds ? weather.clouds.all : 0;
+    let getCloudy = weather.clouds ? weather.clouds.all : 0;
     setWeatherType(getWeatherType);
-    // setCloudy(getCloudy);
+    setCloudy(getCloudy);
   },[weather]);
 
   return (
-  <PageWrapper>
+  <PageWrapper cloud={cloudy}>
     <div className='component'>
       <div className='navbar'>
         <a className={`WeatherNav_Item ${city === 'Seoul' ? 'WeatherNav_Item--active' : ''}`} href ="/?city=Seoul">Seoul</a>
