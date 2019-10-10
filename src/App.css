@@ -1,0 +1,43 @@
+body{
+  background-color: black;
+  color: white;
+}
+.component{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.navbar{
+  margin: 30px;
+  padding: 10px;
+  font-size: 20px;
+}
+.navbar a {
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+.navbar a:hover{
+  color: white;
+  border-bottom: solid white;
+}
+.text{
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+  font-size: x-large;
+}
+.information{
+  margin: 150px;
+}
+.svg-inline--fa.fa-w-20 {
+  width:auto;
+}
+
+.svg-inline--fa {
+  display: inline-block;
+  font-size: 150px;
+  height: 2em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
