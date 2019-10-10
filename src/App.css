@@ -1,5 +1,4 @@
 body{
-  background-color: black;
   color: white;
 }
 .component{
@@ -33,7 +32,12 @@ body{
 .svg-inline--fa.fa-w-20 {
   width:auto;
 }
-
+.svg-inline--fa.fa-w-16 {
+  width:auto;
+}
+.svg-inline--fa.fa-w-14 {
+  width:auto;
+}
 .svg-inline--fa {
   display: inline-block;
   font-size: 150px;

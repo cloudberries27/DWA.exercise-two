@@ -13,7 +13,7 @@ export default function Home(props){
   const [cloudy, setCloudy] = useState(0);
 
   function apiCallback(response){
-    console.log('response', response)
+    console.log(response);
     setWeather(response.data);
   }
   useEffect(()=>{

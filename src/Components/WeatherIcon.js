@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCloudRain, faSmog, faCloud, faSun, faWind } from '@fortawesome/free-solid-svg-icons'
+import { faCloudRain, faSmog, faCloud, faSun, faWind, faPooStorm} from '@fortawesome/free-solid-svg-icons'
 
 export default function WeatherIcon({weatherType}){
   switch(weatherType){
@@ -14,8 +14,12 @@ export default function WeatherIcon({weatherType}){
       return <FontAwesomeIcon icon={faSmog} className="fog"/>
     case 'Mist':
       return <FontAwesomeIcon icon={faSmog} className="fog"/>
+    case 'Fog':
+      return <FontAwesomeIcon icon={faSmog} className="fog"/>
     case 'Sun':
       return <FontAwesomeIcon icon={faSun} className="sun"/>
+    case 'Thunderstorm':
+      return <FontAwesomeIcon icon={faPooStorm} className="thunder"/>
     case 'Wind':
       return <FontAwesomeIcon icon={faWind} className="wind"/>
     default:
