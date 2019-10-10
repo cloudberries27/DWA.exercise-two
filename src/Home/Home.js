@@ -1,4 +1,3 @@
-// left the Temperatures in kelvin
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
